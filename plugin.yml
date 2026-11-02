@@ -1,0 +1,16 @@
+name: MalwaSkinStole
+version: '${project.version}'
+main: com.malwa.skinstole.MalwaSkinStole
+api-version: '1.20'
+description: Skin stealing, permadeath, Wizard Warden boss and Revival Chair rituals.
+commands:
+  s:
+    description: MalwaSkinStole main command
+    usage: /s <ban|unban|locate|spawn|give|inv|skin>
+permissions:
+  malwaskin.admin:
+    description: Admin/Owner commands (ban, unban, spawn, give, locate)
+    default: op
+  malwaskin.use:
+    description: Basic player commands (inv, skin)
+    default: true

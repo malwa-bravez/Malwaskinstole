@@ -1,0 +1,38 @@
+skin:
+  kills-to-steal: 10          # Player A must kill Player B exactly this many times
+  deaths-to-permaban: 7       # once a player's skin is stolen, this many player-kills on them = permaban
+
+wizard-warden:
+  health: 1150
+  regen-max-health: 780               # max health after being given Regeneration
+  regen-drain-min: 20                 # damage per regeneration tick while the effect lasts
+  regen-drain-max: 30
+  weakened-damage-multiplier: 0.25    # damage multiplier while Slowness or Weakness is active
+  minion-every-hp-lost: 400
+  minions-per-wave: 2
+  minion-min-seconds: 120
+  minion-max-seconds: 240
+  loot-min: 2
+  loot-max: 5
+  room-y: -50                         # Y level of the hidden room carved inside the Ancient City
+  search-radius-chunks: 100           # how far /s spawn looks for an Ancient City
+  laser:
+    trigger-percent: 0.29             # of base health (1150 * 0.29 = ~333 HP)
+    charge-ticks: 60
+    length: 100
+    width: 30
+    slices-per-tick: 3                # lower = gentler on server TPS
+    damage: 40.0
+    destroy-blocks: true
+
+revival-chair:
+  max-in-world: 7
+  ritual:
+    duration-seconds: 300
+    notify-radius: 1000
+    require-banned: true              # skin owner must currently be banned to be revived
+    max-raid-mobs: 14
+    raid-spawn-interval-seconds: 3
+    ender-spawn-interval-seconds: 20
+    max-endermen: 3
+    max-distance-from-chair: 48
